@@ -52,7 +52,40 @@ brython_div1 &lt;= "7. " + html.A("41223158", href="https://mdecd2025.github.io/
 <h2>w3</h2>
 <h2>w4</h2>
 <h2>w5</h2>
-<h1>Homework</h1>
+<h3>Webots簡介摘要</h3>
+<div>
+<ul>
+<li class="break-words"><strong>What is Webots?</strong><br/> Webots is a professional mobile robot simulation software that provides a rapid prototyping environment. It allows users to create 3D virtual worlds with physics properties (e.g., mass, joints, friction) and add passive or active objects like mobile robots. Users can equip robots with sensors and actuators and program them for desired behaviors. It offers numerous robot models, examples, and interfaces to transfer simulations to real robots like e-puck or Nao.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>What can I do with Webots?</strong><br/> Webots is ideal for research and education in mobile robotics, supporting projects like robot prototyping (e.g., academic, automotive, toy industries), locomotion research (legged, humanoid robots), multi-agent studies (swarm intelligence, collaborative robots), and adaptive behavior research (genetic algorithms, AI). It’s also used for teaching robotics and robot competitions.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>What do I need to know to use Webots?</strong><br/> Basic knowledge of C, C++, Java, Python, or MATLAB is required to program controllers, though beginners can use the graphical BotStudio language for certain robots (e.g., e-puck). To create custom models or environments, familiarity with 3D graphics and VRML97 is needed for designing or importing 3D objects.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>How do I get User Support?</strong><br/> Cyberbotics offers paid support via Premier Service plans and custom development. Community-based support is available through Robotics StackExchange (webots tag), GitHub Discussions (development questions), GitHub Issues (bug reports), and Discord (quick discussions), though responses aren’t guaranteed.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>Webots Simulation</strong><br/> A Webots simulation consists of a world file (.wbt) defining robots and their environment, controller programs (in C/C++/Java/Python/MATLAB), and an optional physics plugin (in C/C++) to adjust physics behavior. World files may rely on external PROTO files and textures.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>What is a World?</strong><br/> A "world" in Webots is a 3D description of robots and their environment, detailing properties like position, geometry, appearance, and physics. Organized hierarchically (like VRML97), world files (.wbt) specify controller names but don’t include the controller code itself.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>What is a Controller?</strong><br/> A controller is a program that directs a robot in a world file, written in C, C++, Java, Python, or MATLAB. Webots launches each controller as a separate process per robot at simulation start. Some languages require compilation (e.g., C/C++), others interpretation (e.g., Python), with files stored in the "controllers" subdirectory.</li>
+</ul>
+<p></p>
+<ul>
+<li class="break-words"><strong>What is a Supervisor Controller?</strong><br/> A supervisor controller, tied to a robot with its "supervisor" field set to TRUE, can perform privileged actions (e.g., simulation control, moving robots, recording videos) typically reserved for human operators. Written in any supported language, it has greater capabilities than standard controllers.</li>
+</ul>
+</div><h1>Homework</h1>
 <p>作業 (30%)</p>
 <p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>
 <p style="padding-left: 30px;">part1:</p>
