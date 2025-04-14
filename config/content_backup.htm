@@ -50,10 +50,25 @@ brython_div1 &lt;= html.BR()
 brython_div1 &lt;= "7. " + html.A("41223158", href="https://mdecd2025.github.io/hw-41223158")+ html.A("(repo)", href="https://github.com/mdecd2025/hw-41223158")</pre>
 <p>1. <a href="https://mdecd2025.github.io/2a-ag4/">2a-ag4</a><a href="https://github.com/mdecd2025/2a-ag4">(repo)</a><br/>2. <a href="https://mdecd2025.github.io/hw-zhe41223118/">41223118</a><a href="https://github.com/mdecd2025/hw-zhe41223118">(repo)</a><br/>3. <a href="https://mdecd2025.github.io/hw-Spirit0224/">41223122</a><a href="https://github.com/mdecd2025/hw-Spirit0224">(repo)</a><br/>4. <a href="https://https//mdecd2025.github.io/hw-yuhao-08/">41223131</a><a href="https://github.com/mdecd2025/hw-yuhao-08">(repo)</a><br/>5. <a href="https://https//mdecd2025.github.io/hw-41223134">41223134</a><a href="https://github.com/mdecd2025/hw-41223134">(repo)</a><br/>6. <a href="https://mdecd2025.github.io/hw-41223136/">41223136</a><a href="https://github.com/mdecd2025/hw-41223136">(repo)</a><br/>7. <a href="https://mdecd2025.github.io/hw-41223158">41223158</a><a href="https://github.com/mdecd2025/hw-41223158">(repo)</a></p>
 <h2>w3</h2>
-<h2>w4</h2>
+<p><span>列出本班目前尚未納入分組的學員名單。</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># 甲班學員資料處理
+url = "https://mde.tw/list/2a.txt"
+data = open(url).readlines()
+all_stud = data[1:]
+a_all_members = ['41223154', '41271125', '41271158', '41271146', '41271131', 'CYG41223103', '41223102', '41023128', '41023137', '41223137', '41223157', '41223156', 'otakuyoyo', '41223141', '41223113', 'kim41223114', 'joeisme1208', '41223116', '41223144', '41223140', '41223143', '41223138', '41223134', '41223136', 'zhe41223118', 'Spirit0224', 'yuhao-08', '41223158', 'Ren911308', '41223150', 'Manto8', 'CYA41223106', 'yan21ed', 'Lin41223107', '41223133', 'hong41223129', '41223110', '41223147', 'Linjiahong41223125', 'CHN41223132', 'Yu-Fang-Hong', '41023111', 'yckaooooo', 'kolas911205', '41023105', '40932134', '41223104', 'yan41223101', '41223105', '41223153', '41223120', '41223152', 'G8People', 'WSE41223112', '41223146', '41223119']
+ 
+# 顯示甲班標題
+print("甲班:")
+for i in all_stud:
+    drop_n = i.rstrip("\n")
+    stud = drop_n.split("\t")
+    stud_num = stud[0]
+    stud_github = stud[1]
+    if stud_github not in a_all_members:
+        print(stud_num)
+ </pre>
+<p></p><h2>w4</h2>
 <h2>w5</h2>
-<h2>w6</h2>
-<h2>w8</h2>
 <h3>Webots簡介摘要</h3>
 <div>
 <ul>
@@ -88,6 +103,8 @@ brython_div1 &lt;= "7. " + html.A("41223158", href="https://mdecd2025.github.io/
 <li class="break-words"><strong>What is a Supervisor Controller?</strong><br/> A supervisor controller, tied to a robot with its "supervisor" field set to TRUE, can perform privileged actions (e.g., simulation control, moving robots, recording videos) typically reserved for human operators. Written in any supported language, it has greater capabilities than standard controllers.</li>
 </ul>
 </div>
+<h2>w6</h2>
+<h2>w8</h2>
 <h1>Homework</h1>
 <p>作業 (30%)</p>
 <p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>

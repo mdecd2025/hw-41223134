@@ -143,7 +143,24 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">w1 << <a href='w1.html'>Previous</a> <a href='w4.html'>Next</a> >> w4<br /><h1>w3</h1>
-<br />w1 << <a href='w1.html'>Previous</a> <a href='w4.html'>Next</a> >> w4</div>
+<p><span>列出本班目前尚未納入分組的學員名單。</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># 甲班學員資料處理
+url = "https://mde.tw/list/2a.txt"
+data = open(url).readlines()
+all_stud = data[1:]
+a_all_members = ['41223154', '41271125', '41271158', '41271146', '41271131', 'CYG41223103', '41223102', '41023128', '41023137', '41223137', '41223157', '41223156', 'otakuyoyo', '41223141', '41223113', 'kim41223114', 'joeisme1208', '41223116', '41223144', '41223140', '41223143', '41223138', '41223134', '41223136', 'zhe41223118', 'Spirit0224', 'yuhao-08', '41223158', 'Ren911308', '41223150', 'Manto8', 'CYA41223106', 'yan21ed', 'Lin41223107', '41223133', 'hong41223129', '41223110', '41223147', 'Linjiahong41223125', 'CHN41223132', 'Yu-Fang-Hong', '41023111', 'yckaooooo', 'kolas911205', '41023105', '40932134', '41223104', 'yan41223101', '41223105', '41223153', '41223120', '41223152', 'G8People', 'WSE41223112', '41223146', '41223119']
+ 
+# 顯示甲班標題
+print("甲班:")
+for i in all_stud:
+    drop_n = i.rstrip("\n")
+    stud = drop_n.split("\t")
+    stud_num = stud[0]
+    stud_github = stud[1]
+    if stud_github not in a_all_members:
+        print(stud_num)
+ </pre>
+<p>甲班:<br/>41023220<br/>41223111<br/>41223119<br/>41223124<br/>41223148</p><br />w1 << <a href='w1.html'>Previous</a> <a href='w4.html'>Next</a> >> w4</div>
         
     <!-- footer -->
       <div class="container">
