@@ -70,7 +70,36 @@ for i in all_stud:
 <p>甲班:<br/>41023220<br/>41223111<br/>41223119<br/>41223124<br/>41223148</p>
 <h2>w4</h2>
 <h2>w5</h2>
-<h3>Webots簡介摘要</h3>
+<h2>w6</h2>
+<p><span>如何啟動webots：在本學期可攜程式的start.bat中，已經有在可攜上啟動的程式，只需確認</span><a href="http://229.cycu.org/Webots_2025a_web.7z">Webots_2025a_web.7z</a><span> 是否放入可攜套件(</span><span><a href="http://229.cycu.org/portable_wcm2025.7z">portable_wcm2025.7z</a></span><span>)的 data 目錄中，在可攜裡面輸入<span style="background-color: #00ccff;">webotsw</span>即可開啟</span></p>
+<h2>w7</h2>
+<h4>使用 Solvespace 建立投籃機零組件</h4>
+<p><img alt="" height="385" src="/images/螢幕擷取畫面 2025-04-23 010503.png" width="400"/></p>
+<p>零件&amp;組合操作影片:</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/PCTdZbt5ugk" width="560"></iframe></p>
+<p>檔案:<a href="/downloads/投籃機.7z">零件+組合圖</a></p>
+<h2>w8</h2>
+<p>根據<span> </span><a href="https://cyberbotics.com/doc/reference/solidreference">SolidReference</a><span> </span>節點的用法說明, SolidReference 可以用在 Joint 節點的 endPoint 欄位中，用來指向一個現有的 Solid 或靜態環境 &lt;static environment&gt;。通過這種方式，可以閉合機械迴圈。</p>
+<p>當指向一個 Solid 時，唯一的限制是 Solid 和 Joint 必須是某個共同上層 Solid 的下層。</p>
+<p>意思即 SolidReference 是一個引用類型，允許在 Joint 節點的 endPoint 欄位中指定某個目標。</p>
+<p>它可以指向兩種類型的對象：</p>
+<ol>
+<li>現有的 Solid：這是一個具體的實體（例如某個機械零件或組件），但這個 Solid 和 Joint 必須是某個共同上層 Solid 的下層。</li>
+<li>靜態環境 &lt;static environment&gt;：這通常指的是不動的參考框架（例如地面或固定基座）。</li>
+</ol>
+<p>第一個情況:將 fourbar linkage 的 joint4 設置在 base link 的最右端，然後將 joint4 的 endPoint 欄位，設為 SolidReference 指向 link3，即可符合 Soild (link3) 與 Joint (joint4) 都是某個共同上層 Solid (base) 的下層。</p>
+<p>第二個情況:將 fourbar linkage 的 joint4 設置在 link3 的末端，然後將 joint4 的 endPoint 欄位指向 &lt;static environment&gt;，讓 link3 的末端固定在 ground (其作用與固定在 base 節點相同)。</p>
+<h1>tasks</h1>
+<h2>task1</h2>
+<p>python版本更新影片:</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a4t3hBa_VnQ" width="560"></iframe><span></span></p>
+<h2>task3</h2>
+<h4>使用 Solvespace 建立平面四連桿系統零組件</h4>
+<p>零件&amp;組合操作影片:</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Y8y_4ZGxTfI" width="560"></iframe></p>
+<p>檔案:<a href="/downloads/四連桿.7z">零件+組合圖</a></p>
+<h2>task5</h2>
+<p>Webots簡介摘要</p>
 <div>
 <ul>
 <li class="break-words"><strong>What is Webots?</strong><br/> Webots is a professional mobile robot simulation software that provides a rapid prototyping environment. It allows users to create 3D virtual worlds with physics properties (e.g., mass, joints, friction) and add passive or active objects like mobile robots. Users can equip robots with sensors and actuators and program them for desired behaviors. It offers numerous robot models, examples, and interfaces to transfer simulations to real robots like e-puck or Nao.</li>
@@ -104,23 +133,6 @@ for i in all_stud:
 <li class="break-words"><strong>What is a Supervisor Controller?</strong><br/> A supervisor controller, tied to a robot with its "supervisor" field set to TRUE, can perform privileged actions (e.g., simulation control, moving robots, recording videos) typically reserved for human operators. Written in any supported language, it has greater capabilities than standard controllers.</li>
 </ul>
 </div>
-<h2>w6</h2>
-<p><span>如何啟動webots：在本學期可攜程式的start.bat中，已經有在可攜上啟動的程式，只需確認</span><a href="http://229.cycu.org/Webots_2025a_web.7z">Webots_2025a_web.7z</a><span> 是否放入可攜套件(</span><span><a href="http://229.cycu.org/portable_wcm2025.7z">portable_wcm2025.7z</a></span><span>)的 data 目錄中，在可攜裡面輸入<span style="background-color: #00ccff;">webotsw</span>即可開啟</span></p>
-<h2>w7</h2>
-<h4>使用 Solvespace 建立投籃機零組件</h4>
-<p><img alt="" height="385" src="/images/螢幕擷取畫面 2025-04-23 010503.png" width="400"/></p>
-<p>零件&amp;組合操作影片:</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/PCTdZbt5ugk" width="560"></iframe></p>
-<p>檔案:<a href="/downloads/投籃機.7z">零件+組合圖</a></p><h2>w8</h2>
-<h1>tasks</h1>
-<h2>task1</h2>
-<p>python版本更新影片:</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a4t3hBa_VnQ" width="560"></iframe><span></span></p>
-<h2>task3</h2>
-<h4>使用 Solvespace 建立平面四連桿系統零組件</h4>
-<p>零件&amp;組合操作影片:</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Y8y_4ZGxTfI" width="560"></iframe></p>
-<p>檔案:<a href="/downloads/四連桿.7z">零件+組合圖</a></p>
 <h1>Homework</h1>
 <p>作業 (30%)</p>
 <p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>
