@@ -69,7 +69,19 @@ for i in all_stud:
  </pre>
 <p>甲班:<br/>41023220<br/>41223111<br/>41223119<br/>41223124<br/>41223148</p>
 <h2>w4</h2>
-<h2>w5</h2>
+<p><span>已知目前學員的作業倉儲無法在 IPv6 位址設定時正確運作，必須下載 </span><a href="http://229.cycu.org/cmsimde_w4.7z">cmsimde_w4.7z</a>，<span>解開壓縮檔案後，替換倉儲中的 cmsimde 目錄</span></p>
+<p><span>利用ipv6開啟近端步驟:</span></p>
+<p>關閉ipv4</p>
+<p><span><img caption="false" height="328" src="/images/螢幕擷取畫面 2025-04-24 170810.png" width="250"/></span></p>
+<p><span>a0xx依照<a href="https://mde.tw/cd2025/downloads/w4_2a_index.txt">w4_2a_index.txt</a>輸入</span></p>
+<p><span><img caption="false" height="223" src="/images/螢幕擷取畫面 2025-04-24 170705.png" width="270"/></span></p>
+<p><span><img caption="false" height="245" src="/images/螢幕擷取畫面 2025-04-24 170840.png" width="250"/></span></p>
+<p><span><span style="background-color: #ccffcc;"><span style="background-color: #ffffff;">git@(.ppk名稱):(倉儲帳號)/(倉儲分支名稱).git </span></span></span></p>
+<p><span><img caption="false" height="182" src="/images/螢幕擷取畫面 2025-04-24 170858.png" width="250"/></span></p>
+<p><span>在近端輸入</span></p>
+<p>cd <span style="background-color: #ffffff;">(進入資料夾位置)</span></p>
+<p><span style="background-color: #ffffff;">git pull</span></p>
+<p>cms <span style="background-color: #ffffff;">(啟動近端)</span></p><h2>w5</h2>
 <h2>w6</h2>
 <p><span>如何啟動webots：在本學期可攜程式的start.bat中，已經有在可攜上啟動的程式，只需確認</span><a href="http://229.cycu.org/Webots_2025a_web.7z">Webots_2025a_web.7z</a><span> 是否放入可攜套件(</span><span><a href="http://229.cycu.org/portable_wcm2025.7z">portable_wcm2025.7z</a></span><span>)的 data 目錄中，在可攜裡面輸入<span style="background-color: #ccffff;">webotsw</span>即可開啟，<span style="background-color: #ccffff;">開啟時系統會跳出防火牆警告，一定要選擇允許否則會被擋</span></span></p>
 <h2>w7</h2>
@@ -95,7 +107,13 @@ for i in all_stud:
 <p>python版本更新影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a4t3hBa_VnQ" width="560"></iframe><span></span></p>
 <h2>task2</h2>
-<h2>task3</h2>
+<h4>使用 SSH 協定執行作業倉儲的推送</h4>
+<p><span style="background-color: #ccffff;">Proxy type需改成HTTP CONNECT</span></p>
+<p>設定完putty之後的步驟:</p>
+<p>1.利用命令列 regedit 指令, 進入 HKEY_CURRENT_USER - SOFTWARE - SimonTatham 位置, 利用滑鼠右鍵將此登錄設定檔案"匯出" 存入可攜程式 start_ipv6.bat 所在目錄</p>
+<p>2.<span style="background-color: #ccffcc;"><span style="background-color: #ffffff;"><span>克隆指定的倉儲帳號下的分支</span></span></span></p>
+<p><span style="background-color: #ccffcc;"><span style="background-color: #ffffff;"><span>  git clone --recurse-submodules git@w4-1:mde</span></span></span>cd2025/hw-41223134<span style="background-color: #ccffcc;"><span style="background-color: #ffffff;"><span>.git <br/></span></span></span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/9yVt_lS0CN0" width="560"></iframe></p><h2>task3</h2>
 <h4>使用 Solvespace 建立平面四連桿系統零組件</h4>
 <p>零件&amp;組合操作影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Y8y_4ZGxTfI" width="560"></iframe></p>
