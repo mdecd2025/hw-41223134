@@ -70,10 +70,10 @@ for i in all_stud:
 <p>甲班:<br/>41023220<br/>41223111<br/>41223119<br/>41223124<br/>41223148</p>
 <h2>w4</h2>
 <p><span>已知目前學員的作業倉儲無法在 IPv6 位址設定時正確運作，必須下載 </span><a href="http://229.cycu.org/cmsimde_w4.7z">cmsimde_w4.7z</a>，<span>解開壓縮檔案後，替換倉儲中的 cmsimde 目錄</span></p>
-<p><span>利用ipv6開啟近端步驟:</span></p>
+<p><span>利用ipv6</span>維護網站<span>步驟:</span></p>
 <p>關閉ipv4</p>
 <p><span><img caption="false" height="328" src="/images/螢幕擷取畫面 2025-04-24 170810.png" width="250"/></span></p>
-<p><span>a0xx依照<a href="https://mde.tw/cd2025/downloads/w4_2a_index.txt">w4_2a_index.txt</a>輸入</span></p>
+<p><span>a0xx依照<a href="https://mde.tw/cd2025/downloads/w4_2a_index.txt">w4_2a_index.txt</a>輸入序號</span></p>
 <p><span><img caption="false" height="223" src="/images/螢幕擷取畫面 2025-04-24 170705.png" width="270"/></span></p>
 <p><span><img caption="false" height="245" src="/images/螢幕擷取畫面 2025-04-24 170840.png" width="250"/></span></p>
 <p><span><span style="background-color: #ccffcc;"><span style="background-color: #ffffff;">git@(.ppk名稱):(倉儲帳號)/(倉儲分支名稱).git </span></span></span></p>
@@ -81,8 +81,72 @@ for i in all_stud:
 <p><span>在近端輸入</span></p>
 <p>cd <span style="background-color: #ffffff;">(進入資料夾位置)</span></p>
 <p><span style="background-color: #ffffff;">git pull</span></p>
-<p>cms <span style="background-color: #ffffff;">(啟動近端)</span></p><h2>w5</h2>
-<h2>w6</h2>
+<p>cms <span style="background-color: #ffffff;">(啟動近端)</span></p>
+<p><span style="background-color: #ffffff;">取得連結後即可進入個人網站</span></p><h2>w5</h2>
+<p>Webots初學者導引課程</p>
+<p>1. 啟動 Webots：在您的電腦上打開 Webots (假如使用協同產品設計課程的可攜套件，啟動後在命令列中輸入 webotsw 即可開啟 Webots)。</p>
+<p style="padding-left: 30px;">實作 #1：通過雙擊 Webots 圖標（或在終端中從命令行調用）來啟動 Webots。如果您是第一次在此電腦上運行 Webots，可能會提示您選擇圖形主題。您也可能被邀請參加 Webots 指導遊覽，請關閉指導遊覽。</p>
+<p>2. 創建新世界：<br/>    - 轉到 File -&gt; New World。<br/>    - 使用適當的名稱保存新世界文件，例如 my_first_simulation.wbt。</p>
+<p>3. 添加競技場：<br/>    - 在場景樹中，右鍵點擊 root 並選擇 Add New -&gt; Solid。<br/>    - 將新固體重命名為 arena 並為其添加 Shape。<br/>    - 將其幾何形狀設置為 Box，並設置適當的尺寸（例如，1m x 1m x 0.01m）來表示地板。<br/>    - 為形狀添加 Material 並設置其顏色。</p>
+<p style="padding-left: 30px;">實作 #2：通過點擊 3D 視圖的暫停按鈕來暫停當前模擬（請參閱用戶界面描述以找到按鈕）。如果主工具欄上的虛擬時間計數器停止，則模擬被暫停。從 File / New / New Project Directory... 菜單項創建一個新項目並按照說明進行：<br/><br/>1. 將項目目錄命名為 my_first_simulation，而不是建議的 my_project。<br/>2. 將世界文件命名為 my_first_simulation.wbt，而不是建議的 empty.wbt。<br/>3. 點擊所有選框，包括默認未選中的 "Add a rectangle arena"。</p>
+<p>4. 添加牆壁：<br/>    - 重複該過程以在競技場周圍添加四面牆壁。<br/>    - 調整它們的位置和尺寸以適合地板周圍。</p>
+<p style="padding-left: 30px;">實作 #3：在場景樹中雙擊 RectangleArena 節點。這應該會打開該節點並顯示其字段。<br/><br/>1. 選擇 floorTileSize 字段並將其值設置為 0.25 0.25 而不是 0.5 0.5。您應該立即在 3D 視圖中看到效果。<br/>2. 選擇 wallHeight 字段並將其值更改為 0.05 而不是 0.1。競技場的牆壁現在應該變得更低。</p>
+<p>5. 添加箱子：<br/>    - 在競技場內添加幾個箱子作為障礙物。<br/>    - 根據您的喜好設置它們的位置和尺寸。</p>
+<p style="padding-left: 30px;">實作 #4：在場景樹中雙擊 RectangleArena 以將其關閉並選中它。點擊場景樹頂部的添加按鈕。在打開的對話框中，選擇 PROTO nodes (Webots Projects) / objects / factory / containers / WoodenBox (Solid)。一個大箱子應該會出現在競技場的中央。在場景樹中雙擊它以打開其字段。<br/><br/>1. 將其尺寸更改為 0.1 0.1 0.1 而不是 0.6 0.6 0.6。<br/>2. 將其平移更改為 0 0 0.05 而不是 0 0 0.3。或者，您可以使用 3D 視圖中出現的藍色箭頭來調整其 translation.z 字段。<br/>3. 現在按住 Shift 鍵並在 3D 視圖中拖動箱子，將其移動到競技場的某個角落。<br/>4. 選擇箱子並按 ctrl-C，ctrl-V（Windows，Linux）或 ⌘ command-C，⌘ command-V（macOS）來複製和粘貼它。按住 Shift 鍵並拖動新箱子將其移動到某個不同的位置。以這種方式創建第三個箱子。<br/>5. 移動箱子，使競技場中央沒有箱子。您也可以使用藍色旋轉箭頭沿垂直軸旋轉箱子。這也可以通過按住 Shift 鍵並用右鍵拖動來完成。或者，您可以更改場景樹中 WoodenBox 節點的旋轉字段的角度。<br/>6. 一旦您對結果滿意，請使用保存按鈕保存世界。</p>
+<p>6. 添加 e-puck 機器人：<br/>    - 在場景樹中，右鍵點擊 root 並選擇 Add New -&gt; Robot。<br/>    - 從可用機器人列表中選擇 e-puck 機器人。</p>
+<p style="padding-left: 30px;">實作 #5：選擇場景樹視圖中的最後一個節點 WoodenBox。點擊場景樹視圖頂部的添加按鈕。在對話框中，選擇 PROTO nodes (Webots Projects) / robots / gctronic / e-puck / E-puck (Robot)。一個 e-puck 機器人應該會出現在競技場的中央。像移動和旋轉箱子一樣移動和旋轉這個機器人。保存模擬並按下實時運行按鈕。</p>
+<p>7. 創建控制程式：<br/>    - 在場景樹中右鍵點擊 e-puck 並選擇 Add New -&gt; Controller。<br/>    - 創建一個新的控制器文件（例如，epuck_controller.c）並編寫一個簡單的程式來使機器人移動。例如：</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_18755">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+<div class="line number16 index15 alt1">16</div>
+<div class="line number17 index16 alt2">17</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">from</code> <code class="py plain">controller </code><code class="py keyword">import</code> <code class="py plain">Robot, Motor  </code><code class="py comments"># 從 controller 模組導入 Robot 和 Motor 類別</code></div>
+<div class="line number2 index1 alt1"> </div>
+<div class="line number3 index2 alt2"><code class="py plain">TIME_STEP </code><code class="py keyword">=</code> <code class="py value">64</code>  <code class="py comments"># 設置時間步長為 64 毫秒</code></div>
+<div class="line number4 index3 alt1"> </div>
+<div class="line number5 index4 alt2"><code class="py comments"># 創建 Robot 實例</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">robot </code><code class="py keyword">=</code> <code class="py plain">Robot()</code></div>
+<div class="line number7 index6 alt2"> </div>
+<div class="line number8 index7 alt1"><code class="py comments"># 擷取電機設備</code></div>
+<div class="line number9 index8 alt2"><code class="py plain">leftMotor </code><code class="py keyword">=</code> <code class="py plain">robot.getDevice(</code><code class="py string">'left wheel motor'</code><code class="py plain">)  </code><code class="py comments"># 獲取左側輪子電機設備</code></div>
+<div class="line number10 index9 alt1"><code class="py plain">rightMotor </code><code class="py keyword">=</code> <code class="py plain">robot.getDevice(</code><code class="py string">'right wheel motor'</code><code class="py plain">)  </code><code class="py comments"># 獲取右側輪子電機設備</code></div>
+<div class="line number11 index10 alt2"> </div>
+<div class="line number12 index11 alt1"><code class="py comments"># 設置電機的目標位置</code></div>
+<div class="line number13 index12 alt2"><code class="py plain">leftMotor.setPosition(</code><code class="py value">10.0</code><code class="py plain">)  </code><code class="py comments"># 設置左側輪子電機的目標位置為 10.0</code></div>
+<div class="line number14 index13 alt1"><code class="py plain">rightMotor.setPosition(</code><code class="py value">10.0</code><code class="py plain">)  </code><code class="py comments"># 設置右側輪子電機的目標位置為 10.0</code></div>
+<div class="line number15 index14 alt2"> </div>
+<div class="line number16 index15 alt1"><code class="py keyword">while</code> <code class="py plain">robot.step(TIME_STEP) !</code><code class="py keyword">=</code> <code class="py keyword">-</code><code class="py value">1</code><code class="py plain">:  </code><code class="py comments"># 當機器人步進時間步長不等於 -1 時（模擬仍在運行）</code></div>
+<div class="line number17 index16 alt2"><code class="py spaces">    </code><code class="py keyword">pass</code>  <code class="py comments"># 什麼也不做，保持循環運行</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>8. 保存並運行模擬：<br/>    - 保存您的世界文件。<br/>    - 點擊 Play 按鈕運行模擬並觀察機器人移動。</p><h2>w6</h2>
 <p><span>如何啟動webots：在本學期可攜程式的start.bat中，已經有在可攜上啟動的程式，只需確認</span><a href="http://229.cycu.org/Webots_2025a_web.7z">Webots_2025a_web.7z</a><span> 是否放入可攜套件(</span><span><a href="http://229.cycu.org/portable_wcm2025.7z">portable_wcm2025.7z</a></span><span>)的 data 目錄中，在可攜裡面輸入<span style="background-color: #ccffff;">webotsw</span>即可開啟，<span style="background-color: #ccffff;">開啟時系統會跳出防火牆警告，一定要選擇允許否則會被擋</span></span></p>
 <h2>w7</h2>
 <h4>使用 Solvespace 建立投籃機零組件</h4>
