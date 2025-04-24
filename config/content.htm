@@ -95,13 +95,67 @@ for i in all_stud:
 <p>python版本更新影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a4t3hBa_VnQ" width="560"></iframe><span></span></p>
 <h2>task2</h2>
-<h2>task3</h2>
+<h4>使用 SSH 協定執行作業倉儲的推送</h4>
+<p><span style="background-color: #ccffff;">Proxy type需改成HTTP CONNECT</span></p>
+<p>設定完putty之後的步驟:</p>
+<p>1.利用命令列 regedit 指令, 進入 HKEY_CURRENT_USER - SOFTWARE - SimonTatham 位置, 利用滑鼠右鍵將此登錄設定檔案"匯出" 存入可攜程式 start_ipv6.bat 所在目錄</p>
+<p>2.<span style="background-color: #ccffcc;"><span style="background-color: #ffffff;"><span>克隆指定的倉儲帳號下的分支</span></span></span></p>
+<p><span style="background-color: #ccffcc;"><span style="background-color: #ffffff;"><span>  git clone --recurse-submodules git@w4-1:mde</span></span></span>cd2025/hw-41223134<span style="background-color: #ccffcc;"><span style="background-color: #ffffff;"><span>.git <br/></span></span></span></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/9yVt_lS0CN0" width="560"></iframe></p><h2>task3</h2>
 <h4>使用 Solvespace 建立平面四連桿系統零組件</h4>
 <p>零件&amp;組合操作影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Y8y_4ZGxTfI" width="560"></iframe></p>
 <p>檔案:<a href="/downloads/四連桿.7z">零件+組合圖</a></p>
 <h2>task4</h2>
-<h2>task5</h2>
+<p><span><a href="https://mdecd2025.github.io/2a-ag4/content/Brython.html?src=https://gist.githubusercontent.com/zhe41223118/de8d72a66126859139f42a25276bfa25/raw/1dd61ed37c8457f99353d5ddfd539bd27ff28a83/ag">2a分組網站與倉儲連結</a></span></p>
+<p>列出本班尚未分組人員</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_527752">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+<div class="line number11 index10 alt2">11</div>
+<div class="line number12 index11 alt1">12</div>
+<div class="line number13 index12 alt2">13</div>
+<div class="line number14 index13 alt1">14</div>
+<div class="line number15 index14 alt2">15</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py comments"># 甲班學員資料處理</code></div>
+<div class="line number2 index1 alt1"><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">"https://mde.tw/list/2a.txt"</code></div>
+<div class="line number3 index2 alt2"><code class="py plain">data </code><code class="py keyword">=</code> <code class="py functions">open</code><code class="py plain">(url).readlines()</code></div>
+<div class="line number4 index3 alt1"><code class="py plain">all_stud </code><code class="py keyword">=</code> <code class="py plain">data[</code><code class="py value">1</code><code class="py plain">:]</code></div>
+<div class="line number5 index4 alt2"><code class="py plain">a_all_members </code><code class="py keyword">=</code> <code class="py plain">[</code><code class="py string">'41223154'</code><code class="py plain">, </code><code class="py string">'41271125'</code><code class="py plain">, </code><code class="py string">'41271158'</code><code class="py plain">, </code><code class="py string">'41271146'</code><code class="py plain">, </code><code class="py string">'41271131'</code><code class="py plain">, </code><code class="py string">'CYG41223103'</code><code class="py plain">, </code><code class="py string">'41223102'</code><code class="py plain">, </code><code class="py string">'41023128'</code><code class="py plain">, </code><code class="py string">'41023137'</code><code class="py plain">, </code><code class="py string">'41223137'</code><code class="py plain">, </code><code class="py string">'41223157'</code><code class="py plain">, </code><code class="py string">'41223156'</code><code class="py plain">, </code><code class="py string">'otakuyoyo'</code><code class="py plain">, </code><code class="py string">'41223141'</code><code class="py plain">, </code><code class="py string">'41223113'</code><code class="py plain">, </code><code class="py string">'kim41223114'</code><code class="py plain">, </code><code class="py string">'joeisme1208'</code><code class="py plain">, </code><code class="py string">'41223116'</code><code class="py plain">, </code><code class="py string">'41223144'</code><code class="py plain">, </code><code class="py string">'41223140'</code><code class="py plain">, </code><code class="py string">'41223143'</code><code class="py plain">, </code><code class="py string">'41223138'</code><code class="py plain">, </code><code class="py string">'41223134'</code><code class="py plain">, </code><code class="py string">'41223136'</code><code class="py plain">, </code><code class="py string">'zhe41223118'</code><code class="py plain">, </code><code class="py string">'Spirit0224'</code><code class="py plain">, </code><code class="py string">'yuhao-08'</code><code class="py plain">, </code><code class="py string">'41223158'</code><code class="py plain">, </code><code class="py string">'Ren911308'</code><code class="py plain">, </code><code class="py string">'41223150'</code><code class="py plain">, </code><code class="py string">'Manto8'</code><code class="py plain">, </code><code class="py string">'CYA41223106'</code><code class="py plain">, </code><code class="py string">'yan21ed'</code><code class="py plain">, </code><code class="py string">'Lin41223107'</code><code class="py plain">, </code><code class="py string">'41223133'</code><code class="py plain">, </code><code class="py string">'hong41223129'</code><code class="py plain">, </code><code class="py string">'41223110'</code><code class="py plain">, </code><code class="py string">'41223147'</code><code class="py plain">, </code><code class="py string">'Linjiahong41223125'</code><code class="py plain">, </code><code class="py string">'CHN41223132'</code><code class="py plain">, </code><code class="py string">'Yu-Fang-Hong'</code><code class="py plain">, </code><code class="py string">'41023111'</code><code class="py plain">, </code><code class="py string">'yckaooooo'</code><code class="py plain">, </code><code class="py string">'kolas911205'</code><code class="py plain">, </code><code class="py string">'41023105'</code><code class="py plain">, </code><code class="py string">'40932134'</code><code class="py plain">, </code><code class="py string">'41223104'</code><code class="py plain">, </code><code class="py string">'yan41223101'</code><code class="py plain">, </code><code class="py string">'41223105'</code><code class="py plain">, </code><code class="py string">'41223153'</code><code class="py plain">, </code><code class="py string">'41223120'</code><code class="py plain">, </code><code class="py string">'41223152'</code><code class="py plain">, </code><code class="py string">'G8People'</code><code class="py plain">, </code><code class="py string">'WSE41223112'</code><code class="py plain">, </code><code class="py string">'41223146'</code><code class="py plain">, </code><code class="py string">'41223119'</code><code class="py plain">]</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces"> </code> </div>
+<div class="line number7 index6 alt2"><code class="py comments"># 顯示甲班標題</code></div>
+<div class="line number8 index7 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"甲班:"</code><code class="py plain">)</code></div>
+<div class="line number9 index8 alt2"><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">all_stud:</code></div>
+<div class="line number10 index9 alt1"><code class="py spaces">    </code><code class="py plain">drop_n </code><code class="py keyword">=</code> <code class="py plain">i.rstrip(</code><code class="py string">"\n"</code><code class="py plain">)</code></div>
+<div class="line number11 index10 alt2"><code class="py spaces">    </code><code class="py plain">stud </code><code class="py keyword">=</code> <code class="py plain">drop_n.split(</code><code class="py string">"\t"</code><code class="py plain">)</code></div>
+<div class="line number12 index11 alt1"><code class="py spaces">    </code><code class="py plain">stud_num </code><code class="py keyword">=</code> <code class="py plain">stud[</code><code class="py value">0</code><code class="py plain">]</code></div>
+<div class="line number13 index12 alt2"><code class="py spaces">    </code><code class="py plain">stud_github </code><code class="py keyword">=</code> <code class="py plain">stud[</code><code class="py value">1</code><code class="py plain">]</code></div>
+<div class="line number14 index13 alt1"><code class="py spaces">    </code><code class="py keyword">if</code> <code class="py plain">stud_github </code><code class="py keyword">not</code> <code class="py keyword">in</code> <code class="py plain">a_all_members:</code></div>
+<div class="line number15 index14 alt2"><code class="py spaces">        </code><code class="py functions">print</code><code class="py plain">(stud_num)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><a href="https://mdecd2025.github.io/2a-ag4/content/Brython.html?src=https://gist.githubusercontent.com/zhe41223118/fcdf65c3206155c5cd56140e47c6c87d/raw/8a5262e66228212fbc4f862ceaf67c798c9fb54c/2a-1">2a未加入團隊學員</a></p><h2>task5</h2>
 <p><strong>Webots簡介摘要</strong></p>
 <div>
 <ul>
