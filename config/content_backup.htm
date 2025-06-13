@@ -201,11 +201,20 @@ for i in all_stud:
 <p>webots小組協同模擬及 fourbar_box複習。</p>
 <h2>w12</h2>
 <p>本週需依照規定時間完成HW三項作業，並填寫表單。</p>
+<h2>w15</h2>
+<p>抽查第一次：</p>
+<p>               <strong><em>1. </em></strong>個人近端是否是以個人固定ipv6開啟</p>
+<p>               <em><strong>2.</strong></em> HW1是否完成</p>
+<p>               <em><strong>3.</strong></em><span> </span>HW1串流(webotsw --stream)是否完成且能執行</p>
 <h2>w16</h2>
-<p>hw1 link1改短一半</p>
+<p>hw1 link1驅動桿長度改為0.2m</p>
 <p><img caption="false" height="269" src="/images/螢幕擷取畫面 2025-06-06 172541.png" width="500"/></p>
 <p><a href="/downloads/41223134 hw1 worlds.7z">檔案下載</a></p>
-<p><span>hw2 link1改短一半</span></p><h1>Tutorial</h1>
+<p><span>hw2 link1驅動桿長度改為0.2m</span></p>
+<p><span><img caption="false" height="265" src="/images/螢幕擷取畫面 2025-06-07 222630.png" width="500"/></span></p>
+<p><span><a href="/downloads/41223134 hw2改.7z">檔案下載</a></span></p>
+<p>心得:</p>
+<h1>Tutorial</h1>
 <h4></h4>
 <h4>電子冰球機器人操作影片：</h4>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/1H0Lz-oCpoA" width="560"></iframe></p>
@@ -346,21 +355,24 @@ for i in all_stud:
 <p>操作影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/4AJqp9EXw_A" width="560"></iframe></p>
 <p><a href="/downloads/41223134 worlds.7z">檔案下載</a></p>
-<p>心得:這個作業是學習webots的第一個作業，是最難也是最重要的，從中可以學到如何建立box，需要清楚了解joint指向哪個link否則無法確實連接，執行程式就會解體，以及角度轉換為徑度的設定和控制程式如何匯入，經過hw1練習完的基礎，之後的題目就能運用得更如魚得水。</p><h2>HW2</h2>
+<p>心得:這個作業是學習webots的第一個作業，是最難也是最重要的，從中可以學到如何建立box，需要清楚了解joint指向哪個link否則無法確實連接，執行程式就會解體，以及角度轉換為徑度的設定和控制程式如何匯入，經過hw1練習完的基礎，之後的題目就能運用得更如魚得水。</p>
+<h2>HW2</h2>
 <p>HW2 (5%): <span style="background-color: #ffff00;">建立由 CAD 繪製零件組成的平面四連桿機構 Webots 模擬場景</span></p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW2 - 學員學號</p>
 <p>將<a href="https://mdecd2025.github.io/hw-41223134/content/task3">task3</a>繪製好的連桿以程式切割後導入webots組配模擬。(如果使用舊版本可攜程式需 <span style="background-color: #ccffff;">pip install numpy</span> 安裝<a href="https://medium.com/@chiukevin08/numpy%E4%BB%8B%E7%B4%B9-61eb7f288b8d">NumPy</a> 套件，否則程式將如法執行)</p>
 <p>操作影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Huz883OD9WE" width="560"></iframe></p>
 <p><a href="/downloads/41223134 hw2.7z">檔案下載</a></p>
-<p>心得:hw2與hw1不同的是不需要手動建立定位每個link，而是用solvespace繪製零件組裝完後轉為stl ，再用切割程式將各部位轉為obj檔，這樣在webots就能用mesh匯入後直接定位solvespace畫的位置，整體比hw1簡單許多。</p><h2>HW3</h2>
+<p>心得:hw2與hw1不同的是不需要手動建立定位每個link，而是用solvespace繪製零件組裝完後轉為stl ，再用切割程式將各部位轉為obj檔，這樣在webots就能用mesh匯入後直接定位solvespace畫的位置，整體比hw1簡單許多。</p>
+<h2>HW3</h2>
 <p>HW3 (20%):<span style="background-color: #ffff00;">建立 Webots 桌上籃球遊戲機模擬系統</span></p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 HW3 - 學員學號</p>
 <p>操作影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/sqIwtxNXrs4" width="560"></iframe></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/1gTUT_Jg2RE" width="560"></iframe></p>
 <p><a href="/downloads/41223134 hw3.7z">檔案下載</a></p>
-<p>心得:hw3與2的差別是需要另外建立球、設定球的滾動方向以及調大motor的力量，每個節點要注意是否設定的跟solvespace的x y位置相同，否則馬達再用力也無法將球投出，最後另外用mesh將球框場地匯入調整到能進球的位置就大致完成這個作業，期望更熟悉webots後能將車子加進來完成移動投球。</p><h1>Midterm</h1>
+<p>心得:hw3與2的差別是需要另外建立球、設定球的滾動方向以及調大motor的力量，每個節點要注意是否設定的跟solvespace的x y位置相同，否則馬達再用力也無法將球投出，最後另外用mesh將球框場地匯入調整到能進球的位置就大致完成這個作業，期望更熟悉webots後能將車子加進來完成移動投球。</p>
+<h1>Midterm</h1>
 <p>本課程所繳交的期中成績為學員自評之學習期望成績.</p>
 <p>期中考週的自評期望成績繳交流程:</p>
 <ol>
@@ -399,7 +411,8 @@ for i in all_stud:
 <p>操作影片:</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/tyuj8xms3Wk" width="560"></iframe></p>
 <p><a href="/downloads/41223134 exam1.7z">檔案下載</a></p>
-<p>心得:我使用hw1來做修改，經過hw1的練習，熟悉桿件的建立方法後增加link2的box就變得上手許多，在exam1需要到Solvespace繪製好圖形角度後轉換為徑度再設定到angle，中間有碰到link2設定徑度後位置錯誤，後來發現z值改為1即可。</p><h2>Exam2</h2>
+<p>心得:我使用hw1來做修改，經過hw1的練習，熟悉桿件的建立方法後增加link2的box就變得上手許多，在exam1需要到Solvespace繪製好圖形角度後轉換為徑度再設定到angle，中間有碰到link2設定徑度後位置錯誤，後來發現z值改為1即可。</p>
+<h2>Exam2</h2>
 <p>Exam2 (10%): 利用 CAD 零組件建立模擬場景</p>
 <p>操作影片標題: 國立虎尾科技大學 - 機械設計工程系 - cd2025 Exam2 - 學員學號</p>
 <p>左側最短桿為主動旋轉, 其旋轉速度設為 1.0 rad/s, <span style="background-color: #ccffff;">最短桿的長度, 請依照個人學號的最後兩碼作為依據, 設為 1.xx m</span>, 其中 xx 為<span>人學號的最後兩碼, 其餘各桿長度與固定軸間的距離可自行訂定, 惟<span style="background-color: #ccffff;">主動桿的起始旋轉角度 angle, 也請以個人學號的最後兩碼作為依據, 單位為 degree.</span></span></p>
@@ -430,7 +443,8 @@ for i in all_stud:
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/V04TIiQekHo" width="560"></iframe></span></p>
 <p><span>與<a href="https://mdecd2025.github.io/hw-41223158/content/Exam3">41223158</a><span>協同操作</span></span></p>
 <p><span><span><a href="/downloads/41223134 exam3-3.7z">檔案下載</a></span></span></p>
-<p><span><span>心得:</span></span></p><h1>Final</h1>
+<p><span><span>心得:</span></span></p>
+<h1>Final</h1>
 <p><span>期末協同專案執行過程影片、簡報與 PDf 報告檔案 (六人一組) (30%)</span></p>
 <p><span>題目: <span style="background-color: #ccffcc;">Webots 動態投籃模擬系統的協同設計</span></span></p>
 <p><span>說明: </span></p>
